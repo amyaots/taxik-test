@@ -7,7 +7,6 @@ var b = [Int]()
 var c = [Int]()
 a.reserveCapacity(16)
 b.reserveCapacity(6)
-c.reserveCapacity(20)
 
 
 for i in 0..<16 {
