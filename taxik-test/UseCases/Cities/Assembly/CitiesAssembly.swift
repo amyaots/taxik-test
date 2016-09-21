@@ -25,7 +25,6 @@ class CitiesModuleAssembly: ViperModuleAssembly {
             return presenter
         }.initCompleted { (r, p) in
             let p = p as! CitiesPresenter
-            
             p.router = r.resolve(CitiesRouterInput.self, argument: p.view as! TransitionHandler)
             p.interactor = r.resolve(CitiesInteractorInput.self, argument: p as CitiesInteractorOutput)
         }
@@ -41,6 +40,7 @@ class CitiesModuleAssembly: ViperModuleAssembly {
         container.register(CitiesInteractorInput.self) { (r, p: CitiesInteractorOutput) in
             let interactor =  CitiesInteractor()
             interactor.output = p
+            interactor.cityService = r.resolve(CityServiceType.self)
             return interactor
         }
     }
