@@ -12,6 +12,12 @@ class City: Mappable {
     
     //MARK: - Properties
     
+    struct ExperimentalEconom {
+        var data = 0
+        var time = 0
+        var fixRate = 0
+    }
+    
     var ID = 0
     var name = ""
     var apiURL = ""
@@ -27,7 +33,10 @@ class City: Mappable {
     var transfers = false
     var clientEmailRequired = false
     var registrationProcode = false
-    
+    var parentCity = 0
+    var cardProcessing = CardProcessing()
+    var expEconom = ExperimentalEconom()
+    var inappPayMethods: [String] = []
     
     //MARK: - Init
     
@@ -36,25 +45,26 @@ class City: Mappable {
     }
     
     func mapping(map: Map) {
-        self.ID <- map["city_id"]
-        self.name <- map["city_name"]
+        self.ID                     <- map["city_id"]
+        self.name                   <- map["city_name"]
+        self.apiURL                 <- map["city_api_url"]
+        self.domain                 <- map["city_domain"]
+        self.mobileServer           <- map["city_mobile_server"]
+        self.docURL                 <- map["city_doc_url"]
+        self.latitude               <- map["city_latitude"]
+        self.longitude              <- map["city_longitude"]
+        self.spnLatitude            <- map["city_spn_latitude"]
+        self.spnLongitude           <- map["city_spn_longitude"]
+        self.lastAppAndroidVersion  <- map["last_app_android_version"]
+        self.androidDriverApkLink   <- map["android_driver_apk_link"]
+        self.transfers              <- map["transfers"]
+        self.clientEmailRequired    <- map["client_email_required"]
+        self.registrationProcode    <- map["registration_promocode"]
+        self.expEconom.data         <- map["experimental_econom_plus"]
+        self.expEconom.time         <- map["experimental_econom_plus_time"]
+        self.expEconom.fixRate      <- map["experimental_econom_plus_fix_rate"]
+        self.cardProcessing         <- map["card_processing"]
+        self.parentCity             <- map["parentCity"]
     }
 }
 
-/*
- city_id: 2,
- city_name: "Санкт-Петербург",
- city_api_url: "http://piter.beta.taxistock.ru/taxik/api/client/",
- city_domain: "piter.beta.taxistock.ru",
- city_mobile_server: "protobuf.taxistock.ru:7788",
- city_doc_url: "http://piter.beta.taxistock.ru/taxik/api/doc/",
- city_latitude: 59.99349213,
- city_longitude: 30.2890625,
- city_spn_latitude: 0.84036398,
- city_spn_longitude: 3.01300001,
- last_app_android_version: 7045,
- android_driver_apk_link: "http://www.taxik.ru/a/taxik.apk",
- transfers: false,
- client_email_required: true,
- registration_promocode: false
- */
