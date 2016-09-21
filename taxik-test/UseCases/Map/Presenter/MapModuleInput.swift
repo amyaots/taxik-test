@@ -7,5 +7,5 @@
 //
 
 protocol MapModuleInput: class, ModuleInput {
-
+    func set(city: City)
 }

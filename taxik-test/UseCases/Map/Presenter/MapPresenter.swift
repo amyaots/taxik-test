@@ -10,18 +10,20 @@ class MapPresenter {
     weak var view: MapViewInput!
     var interactor: MapInteractorInput!
     var router: MapRouterInput!
-
+    var city: City!
 }
 
 // MARK: - Module Input
 extension MapPresenter: MapModuleInput {
-	
+    func set(city: City) {
+        self.city = city
+    }
 }
 
 // MARK: - View Output
 extension MapPresenter: MapViewOutput {
     func viewIsReady() {
-
+        view.setupInitialState(city: self.city)
     }
 }
 
