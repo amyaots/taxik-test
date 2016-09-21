@@ -16,7 +16,7 @@ class CityService: CityServiceType {
         self.cityRepo = cityRepo
     }
     
-    func getCities() -> Promise<[City]> {
+    func getCities() -> Promise<Cities> {
         return cityRepo.getCities()
     }
 }

@@ -13,14 +13,14 @@ import ObjectMapper
 
 class AlamofireNetworking: NetworkingType {
     
-    func requestArray<ObjectType: Mappable>(URLString: String) -> Promise<[ObjectType]> {
+    func requestObject<ObjectType: Mappable>(URLString: String) -> Promise<ObjectType> {
         UIApplication.shared.isNetworkActivityIndicatorVisible = true
         return Promise(resolvers: { (fulfill, reject) in
-            Alamofire.request(URLString).validate().responseArray { (response: DataResponse<[ObjectType]>) in
+            Alamofire.request(URLString).validate().responseObject { (response: DataResponse<ObjectType>) in
                 UIApplication.shared.isNetworkActivityIndicatorVisible = false
                 switch response.result {
-                case .success(let array):
-                    fulfill(array)
+                case .success(let object):
+                    fulfill(object)
                 case .failure(let error):
                     reject(self.composeError(error: error, data: response.data))
                 }

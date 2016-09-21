@@ -9,5 +9,5 @@
 import PromiseKit
 
 protocol CityServiceType {
-    func getCities() -> Promise<[City]>
+    func getCities() -> Promise<Cities>
 }

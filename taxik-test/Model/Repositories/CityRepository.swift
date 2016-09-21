@@ -16,7 +16,7 @@ class CityRepository: CityRepositoryType {
         self.networking = networking
     }
     
-    func getCities() -> Promise<[City]> {
-        return networking.requestArray(URLString: "http://beta.taxistock.ru/taxik/api/client/query_cities")
+    func getCities() -> Promise<Cities> {
+        return networking.requestObject(URLString: "http://beta.taxistock.ru/taxik/api/client/query_cities")
     }
 }

@@ -10,5 +10,5 @@ import PromiseKit
 import ObjectMapper
 
 protocol NetworkingType {
-    func requestArray<ObjectType: Mappable>(URLString: String) -> Promise<[ObjectType]>
+    func requestObject<ObjectType: Mappable>(URLString: String) -> Promise<ObjectType>
 }
