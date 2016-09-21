@@ -8,4 +8,13 @@
 
 class CitiesRouter: CitiesRouterInput {
 	weak var transitionHandler: TransitionHandler!
+    
+    func openMap(city: City) {
+        transitionHandler.openModule(segueIdentifier: "map") { module in
+            guard let mapModule = module as? MapModuleInput else {
+                fatalError()
+            }
+            mapModule.set(city: city)
+        }
+    }
 }

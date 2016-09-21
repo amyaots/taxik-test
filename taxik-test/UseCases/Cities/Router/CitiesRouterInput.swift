@@ -9,5 +9,5 @@
 import Foundation
 
 protocol CitiesRouterInput {
-
+    func openMap(city: City)
 }
