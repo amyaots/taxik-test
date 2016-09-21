@@ -9,5 +9,9 @@
 import Foundation
 
 protocol CitiesInteractorOutput: class {
+    
+    func received(cities: [City])
+    
+    func encounteredError(error: Error)
 
 }
