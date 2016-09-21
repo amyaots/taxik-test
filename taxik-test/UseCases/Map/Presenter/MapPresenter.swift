@@ -8,8 +8,6 @@
 
 class MapPresenter {
     weak var view: MapViewInput!
-    var interactor: MapInteractorInput!
-    var router: MapRouterInput!
     var city: City!
 }
 
@@ -25,9 +23,4 @@ extension MapPresenter: MapViewOutput {
     func viewIsReady() {
         view.setupInitialState(city: self.city)
     }
-}
-
-// MARK: - Interactor Output
-extension MapPresenter: MapInteractorOutput {
-    
 }

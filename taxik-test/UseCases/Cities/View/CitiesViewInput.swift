@@ -7,13 +7,6 @@
 //
 
 protocol CitiesViewInput: class, ViewInput {
-
-    /**
-        @author Aleksandr Myaots
-        Setup initial state of the view
-    */
-
-    func setupInitialState()
     
     func display(cities: [City])
 }

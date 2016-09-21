@@ -23,25 +23,6 @@ class MapModuleAssembly: ViperModuleAssembly {
             let presenter =  MapPresenter()
             presenter.view = c
             return presenter
-        }.initCompleted { (r, p) in
-            let p = p as! MapPresenter
-            
-            p.router = r.resolve(MapRouterInput.self, argument: p.view as! TransitionHandler)
-            p.interactor = r.resolve(MapInteractorInput.self, argument: p as MapInteractorOutput)
-        }
-        
-        // Router
-        container.register(MapRouterInput.self) { (r, v: TransitionHandler) in
-            let router = MapRouter()
-            router.transitionHandler = v
-            return router
-        }
-
-        // Interactor
-        container.register(MapInteractorInput.self) { (r, p: MapInteractorOutput) in
-            let interactor =  MapInteractor()
-            interactor.output = p
-            return interactor
         }
     }
 }

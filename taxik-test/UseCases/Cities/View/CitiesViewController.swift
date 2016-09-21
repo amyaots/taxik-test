@@ -33,9 +33,6 @@ class CitiesViewController: BaseViewController {
 // MARK: - View Input
 
 extension CitiesViewController: CitiesViewInput {
-    func setupInitialState() {
-    
-    }
     
     func display(cities: [City]) {
         displayManager.cities = cities
