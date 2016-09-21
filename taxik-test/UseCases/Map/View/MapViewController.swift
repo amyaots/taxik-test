@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import GoogleMaps
 
 class MapViewController: BaseViewController {
 
@@ -16,6 +17,8 @@ class MapViewController: BaseViewController {
 
     var output: MapViewOutput!
 
+    @IBOutlet weak var mapView: GMSMapView!
+    
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()

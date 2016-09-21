@@ -74,10 +74,10 @@
             </objects>
             <point key="canvasLocation" x="814.5" y="122.5"/>
         </scene>
-        <!--View Controller-->
+        <!--Map View Controller-->
         <scene sceneID="Ygu-cx-1Yf">
             <objects>
-                <viewController id="vc8-Ik-Pkt" sceneMemberID="viewController">
+                <viewController id="vc8-Ik-Pkt" customClass="MapViewController" customModule="taxik_test" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Z6h-Dz-mqI"/>
                         <viewControllerLayoutGuide type="bottom" id="xeH-Id-T1e"/>
@@ -98,6 +98,9 @@
                             <constraint firstItem="Bsa-1I-UCA" firstAttribute="leading" secondItem="MKG-Ny-8jD" secondAttribute="leading" id="X1j-7y-QQL"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="mapView" destination="Bsa-1I-UCA" id="Reb-jc-lBt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bse-dk-vpm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -108,7 +111,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ouc-lH-3cp" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="XKg-7V-9sa">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="XKg-7V-9sa">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
