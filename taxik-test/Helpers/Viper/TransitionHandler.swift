@@ -12,5 +12,4 @@ protocol TransitionHandler: class {
     func openModule(segueIdentifier: String)
     func openModule(segueIdentifier: String, configurationBlock: @escaping ConfigurationBlock)
     func closeCurrentModule()
-    func closeStackModulde()
 }

@@ -1,12 +1,12 @@
 //
-//  CitiesCitiesViewOutput.swift
+//  MapMapViewOutput.swift
 //  taxik-test
 //
-//  Created by Aleksandr Myaots on 21/09/2016.
+//  Created by Aleksandr Myaots on 22/09/2016.
 //  Copyright © 2016 Myaots. All rights reserved.
 //
 
-protocol CitiesViewOutput {
+protocol MapViewOutput {
 
     /**
         @author Aleksandr Myaots
@@ -14,6 +14,4 @@ protocol CitiesViewOutput {
     */
 
     func viewIsReady()
-    
-    func open(city: City)
 }
