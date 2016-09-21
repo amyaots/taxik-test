@@ -10,7 +10,7 @@ import Alamofire
 import ObjectMapper
 
 protocol Translatable {
-    func translated(locale l: NSLocale) -> String
+    func translated(locale l: Locale) -> String
 }
 
 class BackendError: Mappable, Error, Translatable {
@@ -38,8 +38,8 @@ class BackendError: Mappable, Error, Translatable {
         self.status <- map["status"]
     }
     
-    func translated(locale l: NSLocale) -> String {
-        return code
+    func translated(locale l: Locale) -> String {
+        return error.debugDescription
     }
     
 }
@@ -51,7 +51,7 @@ enum ValidationError: Error, Translatable {
     case NotMatch
     case Offline
     
-    func translated(locale l: NSLocale) -> String {
+    func translated(locale l: Locale) -> String {
         switch self {
         case .Empty(field: let field):
             return ("EMPTY" + field)
