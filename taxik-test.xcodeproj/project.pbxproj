@@ -24,6 +24,7 @@
 		BC62403E1D93193400F513C9 /* CityRepositoryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC62403D1D93193400F513C9 /* CityRepositoryType.swift */; };
 		BC6240421D931CFF00F513C9 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6240411D931CFF00F513C9 /* City.swift */; };
 		BC6240441D931FAD00F513C9 /* CardProcessing.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6240431D931FAD00F513C9 /* CardProcessing.swift */; };
+		BC6240461D9322D700F513C9 /* CityRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6240451D9322D700F513C9 /* CityRepository.swift */; };
 		BCE6D3C01D92E1520079B9DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE6D3BF1D92E1520079B9DC /* AppDelegate.swift */; };
 		BCE6D3C51D92E1520079B9DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCE6D3C31D92E1520079B9DC /* Main.storyboard */; };
 		BCE6D3C71D92E1520079B9DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCE6D3C61D92E1520079B9DC /* Assets.xcassets */; };
@@ -55,6 +56,7 @@
 		BC62403D1D93193400F513C9 /* CityRepositoryType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CityRepositoryType.swift; path = Model/Repositories/CityRepositoryType.swift; sourceTree = "<group>"; };
 		BC6240411D931CFF00F513C9 /* City.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = City.swift; path = Model/Entities/City.swift; sourceTree = "<group>"; };
 		BC6240431D931FAD00F513C9 /* CardProcessing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CardProcessing.swift; path = Model/Entities/CardProcessing.swift; sourceTree = "<group>"; };
+		BC6240451D9322D700F513C9 /* CityRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CityRepository.swift; path = Model/Repositories/CityRepository.swift; sourceTree = "<group>"; };
 		BCE6D3BC1D92E1520079B9DC /* taxik-test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "taxik-test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCE6D3BF1D92E1520079B9DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BCE6D3C41D92E1520079B9DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -166,6 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				BC62403D1D93193400F513C9 /* CityRepositoryType.swift */,
+				BC6240451D9322D700F513C9 /* CityRepository.swift */,
 			);
 			name = Repositories;
 			sourceTree = "<group>";
@@ -428,6 +431,7 @@
 				BCE6D3DA1D92F1530079B9DC /* ModuleInputProvider.swift in Sources */,
 				BCE6D3DC1D92F1530079B9DC /* UIViewController+TransitionHandler.swift in Sources */,
 				2B290F4E5FD64C9458B25739 /* CitiesInteractorInput.swift in Sources */,
+				BC6240461D9322D700F513C9 /* CityRepository.swift in Sources */,
 				8DF7F05A7BD7EA2D82EFDC26 /* CitiesInteractorOutput.swift in Sources */,
 				0D56E3EE9B2A6EA77657F3B4 /* CitiesInteractor.swift in Sources */,
 				BCE6D3DB1D92F1530079B9DC /* TransitionHandler.swift in Sources */,
