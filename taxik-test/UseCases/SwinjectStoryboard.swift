@@ -31,6 +31,6 @@ extension SwinjectStoryboard {
     public static func setup() {
         AssemblerHolder.sharedAssembler.apply(assemblies:
                 [NetworkModelAssembly()
-                ])
+                , CityModelAssembly()])
     }
 }
