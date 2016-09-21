@@ -14,4 +14,6 @@ protocol CitiesViewOutput {
     */
 
     func viewIsReady()
+    
+    func open(city: City)
 }

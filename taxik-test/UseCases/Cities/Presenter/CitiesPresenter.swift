@@ -25,6 +25,10 @@ extension CitiesPresenter: CitiesViewOutput {
     func viewIsReady() {
         interactor.getCities()
     }
+    
+    func open(city: City) {
+        router.openMap(city: city)
+    }
 }
 
 // MARK: - Interactor Output
