@@ -1,0 +1,46 @@
+PODS:
+  - Alamofire (4.0.0)
+  - AlamofireObjectMapper (4.0.0):
+    - Alamofire (~> 4.0)
+    - ObjectMapper (~> 2.0)
+  - GoogleMaps (2.0.1):
+    - GoogleMaps/Maps (= 2.0.1)
+  - GoogleMaps/Base (2.0.1)
+  - GoogleMaps/Maps (2.0.1):
+    - GoogleMaps/Base (= 2.0.1)
+  - ObjectMapper (2.0.0)
+  - PromiseKit (4.0.1):
+    - PromiseKit/Foundation (= 4.0.1)
+    - PromiseKit/QuartzCore (= 4.0.1)
+    - PromiseKit/UIKit (= 4.0.1)
+  - PromiseKit/CorePromise (4.0.1)
+  - PromiseKit/Foundation (4.0.1):
+    - PromiseKit/CorePromise
+  - PromiseKit/QuartzCore (4.0.1):
+    - PromiseKit/CorePromise
+  - PromiseKit/UIKit (4.0.1):
+    - PromiseKit/CorePromise
+  - Swinject (2.0.0-beta.2)
+  - SwinjectStoryboard (1.0.0-beta.2):
+    - Swinject (= 2.0.0-beta.2)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.0)
+  - AlamofireObjectMapper (~> 4.0)
+  - GoogleMaps
+  - PromiseKit (~> 4.0)
+  - Swinject (= 2.0.0-beta.2)
+  - SwinjectStoryboard (= 1.0.0-beta.2)
+
+SPEC CHECKSUMS:
+  Alamofire: fef59f00388f267e52d9b432aa5d93dc97190f14
+  AlamofireObjectMapper: 9faa3ce5a240efda1b209009a2d6e1e949227abc
+  GoogleMaps: f09da64fc987c1aa29394567c3cab5a3df83c402
+  ObjectMapper: aed2570edabbd3c9b26c939e1cabdb6558f933e0
+  PromiseKit: ae9e7f97ee758e23f7b9c5e80380a2e78d6338c5
+  Swinject: 69a893192efa9f2cc44be79ef423d04d571b6af9
+  SwinjectStoryboard: b52b45821a50386ef604c3cd098f8029a50a268d
+
+PODFILE CHECKSUM: 5494df73ca52db712ed1052aa477f8c078bc41fd
+
+COCOAPODS: 1.1.0.rc.2
