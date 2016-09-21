@@ -15,10 +15,17 @@ class CitiesViewController: BaseViewController {
     weak var assembler = ViperAssembler<CitiesModuleAssembly>()
 
     var output: CitiesViewOutput!
+    
+    var displayManager: CitiesDisplayManager!
 
+    @IBOutlet weak var collectionView: UICollectionView!
+    
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        displayManager = CitiesDisplayManager(output: output, collectionView: collectionView)
+        
         output.viewIsReady()
     }
 }
