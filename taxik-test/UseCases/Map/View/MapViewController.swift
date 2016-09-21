@@ -29,7 +29,7 @@ class MapViewController: BaseViewController {
 // MARK: - View Input
 
 extension MapViewController: MapViewInput {
-    func setupInitialState() {
+    func setupInitialState(city: City) {
     
     }
 }

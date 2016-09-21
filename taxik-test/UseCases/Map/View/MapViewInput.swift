@@ -13,5 +13,5 @@ protocol MapViewInput: class, ViewInput {
         Setup initial state of the view
     */
 
-    func setupInitialState()
+    func setupInitialState(city: City)
 }
