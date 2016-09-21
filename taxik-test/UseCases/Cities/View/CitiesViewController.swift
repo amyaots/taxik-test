@@ -36,6 +36,10 @@ extension CitiesViewController: CitiesViewInput {
     func setupInitialState() {
     
     }
+    
+    func display(cities: [City]) {
+        displayManager.cities = cities
+    }
 }
 
 //MARK: - ModuleInputeProvider

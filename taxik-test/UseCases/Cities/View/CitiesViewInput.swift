@@ -14,4 +14,6 @@ protocol CitiesViewInput: class, ViewInput {
     */
 
     func setupInitialState()
+    
+    func display(cities: [City])
 }
