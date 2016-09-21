@@ -19,9 +19,14 @@ class MapViewController: BaseViewController {
 
     @IBOutlet weak var mapView: GMSMapView!
     
+    var displayManager: MapDisplayManager!
+    
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        displayManager = MapDisplayManager(mapView: mapView)
+        
         output.viewIsReady()
     }
 }
@@ -30,7 +35,8 @@ class MapViewController: BaseViewController {
 
 extension MapViewController: MapViewInput {
     func setupInitialState(city: City) {
-    
+        navigationItem.title = city.name
+        displayManager.display(city: city)
     }
 }
 
