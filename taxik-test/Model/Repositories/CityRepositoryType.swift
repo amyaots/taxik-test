@@ -9,5 +9,5 @@
 import PromiseKit
 
 protocol CityRepositoryType {
-    func getCities() -> Promise
+    func getCities() -> Promise<[City]>
 }
