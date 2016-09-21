@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0329D73CB771D063E241010A /* Pods_taxik_test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF823DE716D99C1BF2EF8DBF /* Pods_taxik_test.framework */; };
 		BCE6D3C01D92E1520079B9DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE6D3BF1D92E1520079B9DC /* AppDelegate.swift */; };
 		BCE6D3C21D92E1520079B9DC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE6D3C11D92E1520079B9DC /* ViewController.swift */; };
 		BCE6D3C51D92E1520079B9DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCE6D3C31D92E1520079B9DC /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8FA9D054CB196575F4C1010B /* Pods-taxik-test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-taxik-test.debug.xcconfig"; path = "Pods/Target Support Files/Pods-taxik-test/Pods-taxik-test.debug.xcconfig"; sourceTree = "<group>"; };
 		BCE6D3BC1D92E1520079B9DC /* taxik-test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "taxik-test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCE6D3BF1D92E1520079B9DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BCE6D3C11D92E1520079B9DC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		BCE6D3C61D92E1520079B9DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BCE6D3C91D92E1520079B9DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BCE6D3CB1D92E1520079B9DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF823DE716D99C1BF2EF8DBF /* Pods_taxik_test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_taxik_test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA1F4DF898BC1C05C8A77C64 /* Pods-taxik-test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-taxik-test.release.xcconfig"; path = "Pods/Target Support Files/Pods-taxik-test/Pods-taxik-test.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0329D73CB771D063E241010A /* Pods_taxik_test.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		87E748CEBC7643ABF1A95CA2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DF823DE716D99C1BF2EF8DBF /* Pods_taxik_test.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BCE6D3B31D92E1510079B9DC = {
 			isa = PBXGroup;
 			children = (
 				BCE6D3BE1D92E1520079B9DC /* taxik-test */,
 				BCE6D3BD1D92E1520079B9DC /* Products */,
+				D53C4CD64F09D1613564AE9F /* Pods */,
+				87E748CEBC7643ABF1A95CA2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +79,15 @@
 			path = "taxik-test";
 			sourceTree = "<group>";
 		};
+		D53C4CD64F09D1613564AE9F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8FA9D054CB196575F4C1010B /* Pods-taxik-test.debug.xcconfig */,
+				EA1F4DF898BC1C05C8A77C64 /* Pods-taxik-test.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BCE6D3CE1D92E1520079B9DC /* Build configuration list for PBXNativeTarget "taxik-test" */;
 			buildPhases = (
+				E344EDF9C33776DB3731C543 /* [CP] Check Pods Manifest.lock */,
 				BCE6D3B81D92E1510079B9DC /* Sources */,
 				BCE6D3B91D92E1510079B9DC /* Frameworks */,
 				BCE6D3BA1D92E1510079B9DC /* Resources */,
+				F2F23A0EB78D7696B164F979 /* [CP] Embed Pods Frameworks */,
+				F5F58979902731DE68FDDF17 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E344EDF9C33776DB3731C543 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F2F23A0EB78D7696B164F979 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-taxik-test/Pods-taxik-test-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F5F58979902731DE68FDDF17 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-taxik-test/Pods-taxik-test-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BCE6D3B81D92E1510079B9DC /* Sources */ = {
@@ -258,6 +333,7 @@
 		};
 		BCE6D3CF1D92E1520079B9DC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8FA9D054CB196575F4C1010B /* Pods-taxik-test.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "taxik-test/Info.plist";
@@ -270,6 +346,7 @@
 		};
 		BCE6D3D01D92E1520079B9DC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA1F4DF898BC1C05C8A77C64 /* Pods-taxik-test.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "taxik-test/Info.plist";
@@ -299,6 +376,7 @@
 				BCE6D3D01D92E1520079B9DC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
