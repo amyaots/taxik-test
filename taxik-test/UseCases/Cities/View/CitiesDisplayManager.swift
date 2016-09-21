@@ -50,5 +50,6 @@ extension CitiesDisplayManager: UICollectionViewDataSource {
 extension CitiesDisplayManager: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print(cities[indexPath.row].name)
+        output.open(city: cities[indexPath.row])
     }
 }
