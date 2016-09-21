@@ -38,6 +38,7 @@
 		BC6240501D93297200F513C9 /* CitiesDisplayManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC62404F1D93297200F513C9 /* CitiesDisplayManager.swift */; };
 		BC6240521D932D2500F513C9 /* CityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6240511D932D2500F513C9 /* CityCell.swift */; };
 		BC6240541D9331AB00F513C9 /* Cities.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6240531D9331AB00F513C9 /* Cities.swift */; };
+		BC6240561D93413200F513C9 /* MapDisplayManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6240551D93413200F513C9 /* MapDisplayManager.swift */; };
 		BCE6D3C01D92E1520079B9DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE6D3BF1D92E1520079B9DC /* AppDelegate.swift */; };
 		BCE6D3C51D92E1520079B9DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCE6D3C31D92E1520079B9DC /* Main.storyboard */; };
 		BCE6D3C71D92E1520079B9DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCE6D3C61D92E1520079B9DC /* Assets.xcassets */; };
@@ -90,6 +91,7 @@
 		BC62404F1D93297200F513C9 /* CitiesDisplayManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CitiesDisplayManager.swift; sourceTree = "<group>"; };
 		BC6240511D932D2500F513C9 /* CityCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityCell.swift; sourceTree = "<group>"; };
 		BC6240531D9331AB00F513C9 /* Cities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Cities.swift; path = Model/Entities/Cities.swift; sourceTree = "<group>"; };
+		BC6240551D93413200F513C9 /* MapDisplayManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapDisplayManager.swift; sourceTree = "<group>"; };
 		BCE6D3BC1D92E1520079B9DC /* taxik-test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "taxik-test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCE6D3BF1D92E1520079B9DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BCE6D3C41D92E1520079B9DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -139,6 +141,7 @@
 				2DAF1A4C79E7E26F6B128CBE /* MapViewInput.swift */,
 				165662B177482BD22F3A3504 /* MapViewOutput.swift */,
 				231791DA2FFE7B371DA5A766 /* MapViewController.swift */,
+				BC6240551D93413200F513C9 /* MapDisplayManager.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -523,6 +526,7 @@
 				BCE6D3E11D92F61A0079B9DC /* SwinjectStoryboard.swift in Sources */,
 				BCE6D3DD1D92F1530079B9DC /* ViewInput.swift in Sources */,
 				BC6240421D931CFF00F513C9 /* City.swift in Sources */,
+				BC6240561D93413200F513C9 /* MapDisplayManager.swift in Sources */,
 				BCE6D3DF1D92F16F0079B9DC /* UIViewController+showAlertView.swift in Sources */,
 				C50F561ADF49B1957D0D8B86 /* CitiesViewOutput.swift in Sources */,
 				BC62404C1D93258B00F513C9 /* CityServiceType.swift in Sources */,
