@@ -29,12 +29,8 @@ protocol ViperModuleAssembly: AssemblyType {
 
 extension SwinjectStoryboard {
     public static func setup() {
-//        AssemblerHolder.sharedAssembler.applyAssemblies(
-//                [NetworkModelAssembly()
-//                , UserModelAssembly()
-//                , ApplicationModelAssembly()
-//                , CarModelAssembly()
-//                , GasStationModelAssembly()
-//                , AdvertisingModelAssembly()])
+        AssemblerHolder.sharedAssembler.apply(assemblies:
+                [NetworkModelAssembly()
+                ])
     }
 }
