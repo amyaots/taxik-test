@@ -22,6 +22,7 @@
 		BC62403B1D93034E00F513C9 /* AlamofireNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6240391D93034E00F513C9 /* AlamofireNetworking.swift */; };
 		BC62403C1D93034E00F513C9 /* NetworkingType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC62403A1D93034E00F513C9 /* NetworkingType.swift */; };
 		BC62403E1D93193400F513C9 /* CityRepositoryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC62403D1D93193400F513C9 /* CityRepositoryType.swift */; };
+		BC6240421D931CFF00F513C9 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6240411D931CFF00F513C9 /* City.swift */; };
 		BCE6D3C01D92E1520079B9DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE6D3BF1D92E1520079B9DC /* AppDelegate.swift */; };
 		BCE6D3C51D92E1520079B9DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCE6D3C31D92E1520079B9DC /* Main.storyboard */; };
 		BCE6D3C71D92E1520079B9DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCE6D3C61D92E1520079B9DC /* Assets.xcassets */; };
@@ -51,6 +52,7 @@
 		BC6240391D93034E00F513C9 /* AlamofireNetworking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AlamofireNetworking.swift; path = Model/Networking/AlamofireNetworking.swift; sourceTree = "<group>"; };
 		BC62403A1D93034E00F513C9 /* NetworkingType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkingType.swift; path = Model/Networking/NetworkingType.swift; sourceTree = "<group>"; };
 		BC62403D1D93193400F513C9 /* CityRepositoryType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CityRepositoryType.swift; path = Model/Repositories/CityRepositoryType.swift; sourceTree = "<group>"; };
+		BC6240411D931CFF00F513C9 /* City.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = City.swift; path = Model/Entities/City.swift; sourceTree = "<group>"; };
 		BCE6D3BC1D92E1520079B9DC /* taxik-test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "taxik-test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCE6D3BF1D92E1520079B9DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BCE6D3C41D92E1520079B9DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				BC62402F1D9302C700F513C9 /* ErrorEntitie.swift */,
+				BC6240411D931CFF00F513C9 /* City.swift */,
 			);
 			name = Entities;
 			sourceTree = "<group>";
@@ -411,6 +414,7 @@
 				3D905AC0185CB85D63E033FA /* CitiesViewInput.swift in Sources */,
 				BCE6D3E11D92F61A0079B9DC /* SwinjectStoryboard.swift in Sources */,
 				BCE6D3DD1D92F1530079B9DC /* ViewInput.swift in Sources */,
+				BC6240421D931CFF00F513C9 /* City.swift in Sources */,
 				BCE6D3DF1D92F16F0079B9DC /* UIViewController+showAlertView.swift in Sources */,
 				C50F561ADF49B1957D0D8B86 /* CitiesViewOutput.swift in Sources */,
 				BC62403E1D93193400F513C9 /* CityRepositoryType.swift in Sources */,
