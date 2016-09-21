@@ -1,0 +1,25 @@
+### Headers settings
+company: Myaots
+
+### Xcode project settings
+project_name: taxik-test
+xcodeproj_path: taxik-test.xcodeproj
+
+### Code generation settings section
+# The main project target name
+project_target: taxik-test
+
+# The file path for new modules
+project_file_path: taxik-test/UseCases
+
+# The Xcode group path to new modules
+project_group_path: taxik-test/UseCases
+
+### Dependencies settings section
+podfile_path: Podfile
+
+### Templates
+catalogs:
+- 'git@213.221.39.62:amyaots/generamba_templates.git'
+templates:
+- {name: sml_viper}
